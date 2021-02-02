@@ -39,7 +39,7 @@ public class Calculadora implements Icalculadora{
     
     @Override
     public double resolver(String input){
-        Stack stack = new Stack<>();
+        VECTOR stack = new VECTOR<>();
         double res = 0;
         for (int i = 0; i < input.length(); i++){
             char c = input.charAt(i);
