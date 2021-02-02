@@ -16,22 +16,22 @@ public class Calculadora implements Icalculadora{
         return (c=='+'|c=='-'|c=='*'|c=='/');
     }
     
-    private double sumar(Stack stack){
+    private double sumar(VECTOR stack){
         double b = Double.parseDouble(stack.pop().toString());
         double a = Double.parseDouble(stack.pop().toString());
         return a+b;
     }
-    private double restar(Stack stack){
+    private double restar(VECTOR stack){
         double b = Double.parseDouble(stack.pop().toString());
         double a = Double.parseDouble(stack.pop().toString());
         return a-b;
     }
-    private double multiplicar(Stack stack){
+    private double multiplicar(VECTOR stack){
         double b = Double.parseDouble(stack.pop().toString());
         double a = Double.parseDouble(stack.pop().toString());
         return a*b;
     }
-    private double dividir(Stack stack){
+    private double dividir(VECTOR stack){
         double b = Double.parseDouble(stack.pop().toString());
         double a = Double.parseDouble(stack.pop().toString());
         return a/b;
